@@ -2,14 +2,32 @@
 
 ## 📌 Descripción General
 
-Este proyecto implementa la automatización de pruebas sobre la API REST de [GoREST](https://gorest.co.in/), utilizando el framework **Karate DSL** con Maven, ejecutado desde **IntelliJ IDEA**. Se desarrollaron 4 escenarios clave relacionados con operaciones CRUD sobre usuarios, validando los códigos de respuesta y campos relevantes en el cuerpo de las respuestas.
+El proyecto utiliza la API pública GoREST para realizar operaciones CRUD sobre recursos como usuarios, publicaciones y comentarios. En este caso se ha trabajado exclusivamente con el endpoint /users, el cual permite crear, actualizar, consultar y eliminar usuarios mediante métodos HTTP como POST, PUT, GET y DELETE.
+- Base URL: https://gorest.co.in/public/v2
+- Autenticación: Requiere un token personal que se genera desde https://gorest.co.in/my-account/access-tokens
 
-## 🚀 Instalación del Proyecto
+## 📌 Instalación del Proyecto
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/usuario/karate-gorest-api.git
-   cd karate-gorest-api
+   git clone https://github.com/RosalbaR/auto_Reto.git
+   cd auto_Reto.git
+
+2. Asegúrate de tener instalado:
+- Java 11+
+- Maven 3.6+
+- IntelliJ IDEA (o cualquier editor con soporte Maven)
+
+## 📌 Instrucciones para ejecutar las prueba
+
+Desde la raíz del proyecto, puedes ejecutar todas las pruebas utilizando Maven:
+mvn test
+
+## 📌 Instrucciones para generar el report
+
+Karate genera un reporte HTML al finalizar la ejecución. Lo encontrarás en
+- target/karate-reports/karate-summary.html
+Ábrelo en tu navegador para ver un resumen visual de los escenarios y pasos validados.
 
 --------------------------PREGUNTAS------------------------------
 
